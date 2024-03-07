@@ -1353,78 +1353,6 @@
       }
     },
     {
-      "id": 117,
-      "type": "KSamplerAdvancedPipe //Inspire",
-      "pos": [
-        4491.22862265625,
-        -321.9332832519534
-      ],
-      "size": {
-        "0": 315,
-        "1": 410
-      },
-      "flags": {},
-      "order": 55,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "basic_pipe",
-          "type": "BASIC_PIPE",
-          "link": 265
-        },
-        {
-          "name": "latent_image",
-          "type": "LATENT",
-          "link": 266,
-          "slot_index": 1
-        },
-        {
-          "name": "noise_opt",
-          "type": "NOISE",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            268
-          ],
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            269
-          ],
-          "shape": 3,
-          "slot_index": 1
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "KSamplerAdvancedPipe //Inspire"
-      },
-      "widgets_values": [
-        true,
-        42,
-        "fixed",
-        8,
-        2.5,
-        "dpmpp_2m_sde",
-        "karras",
-        0,
-        10000,
-        "CPU",
-        false,
-        "incremental",
-        0,
-        0
-      ]
-    },
-    {
       "id": 107,
       "type": "IPAdapterModelHelper //Inspire",
       "pos": [
@@ -1693,8 +1621,7 @@
         0.85,
         false,
         false,
-        "",
-        "1girl, solo, looking_at_viewer, brown_hair, brown_eyes, jewelry, earrings, hair_bun, blurry, sweater, lips, eyelashes, blurry_background, single_hair_bun, portrait, freckles, head_rest, realistic, nose"
+        ""
       ]
     },
     {
@@ -2524,6 +2451,78 @@
         0.6,
         0,
         1,
+        0
+      ]
+    },
+    {
+      "id": 117,
+      "type": "KSamplerAdvancedPipe //Inspire",
+      "pos": [
+        4491.22862265625,
+        -321.9332832519534
+      ],
+      "size": {
+        "0": 315,
+        "1": 410
+      },
+      "flags": {},
+      "order": 55,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "basic_pipe",
+          "type": "BASIC_PIPE",
+          "link": 265
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 266,
+          "slot_index": 1
+        },
+        {
+          "name": "noise_opt",
+          "type": "NOISE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            268
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            269
+          ],
+          "shape": 3,
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KSamplerAdvancedPipe //Inspire"
+      },
+      "widgets_values": [
+        true,
+        42,
+        "fixed",
+        8,
+        2.5,
+        "dpmpp_sde",
+        "karras",
+        0,
+        10000,
+        "CPU",
+        false,
+        "incremental",
+        0,
         0
       ]
     }
